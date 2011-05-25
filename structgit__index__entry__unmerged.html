@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<title>libgit2: git_signature Struct Reference</title>
+<title>libgit2: git_index_entry_unmerged Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javaScript" src="search/search.js"></script>
@@ -50,31 +50,31 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<h1>git_signature Struct Reference</h1>  </div>
+<h1>git_index_entry_unmerged Struct Reference<br/>
+<small>
+[<a class="el" href="group__git__index.html">Git index parsing and manipulation routines</a>]</small>
+</h1>  </div>
 </div>
 <div class="contents">
-<!-- doxytag: class="git_signature" -->
-<p>An action signature (e.g.  
+<!-- doxytag: class="git_index_entry_unmerged" -->
+<p>Representation of an unmerged file entry in the index.  
 <a href="#_details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="types_8h_source.html">types.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="index_8h_source.html">index.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a62cfbebc24904a160a49389b83866ca7"></a><!-- doxytag: member="git_signature::name" ref="a62cfbebc24904a160a49389b83866ca7" args="" -->
-char *&nbsp;</td><td class="memItemRight" valign="bottom"><b>name</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9afecd0c378c3211effa5dbe377dd1d8"></a><!-- doxytag: member="git_signature::email" ref="a9afecd0c378c3211effa5dbe377dd1d8" args="" -->
-char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgit__signature.html#a9afecd0c378c3211effa5dbe377dd1d8">email</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">full name of the author <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a44baff6104be09d41debfa651fabd723"></a><!-- doxytag: member="git_signature::when" ref="a44baff6104be09d41debfa651fabd723" args="" -->
-<a class="el" href="structgit__time.html">git_time</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgit__signature.html#a44baff6104be09d41debfa651fabd723">when</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">email of the author <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4567cee2eba129e1d023ccf51ee42d0f"></a><!-- doxytag: member="git_index_entry_unmerged::mode" ref="a4567cee2eba129e1d023ccf51ee42d0f" args="[3]" -->
+unsigned int&nbsp;</td><td class="memItemRight" valign="bottom"><b>mode</b> [3]</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4604edc3d59b0d0787b650f0ab75d059"></a><!-- doxytag: member="git_index_entry_unmerged::oid" ref="a4604edc3d59b0d0787b650f0ab75d059" args="[3]" -->
+<a class="el" href="structgit__oid.html">git_oid</a>&nbsp;</td><td class="memItemRight" valign="bottom"><b>oid</b> [3]</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6e2e96e5224d3b2f505b69bf77e838a9"></a><!-- doxytag: member="git_index_entry_unmerged::path" ref="a6e2e96e5224d3b2f505b69bf77e838a9" args="" -->
+const char *&nbsp;</td><td class="memItemRight" valign="bottom"><b>path</b></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>An action signature (e.g. </p>
-<p>for committers, taggers, etc) </p>
+<p>Representation of an unmerged file entry in the index. </p>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="types_8h_source.html">types.h</a></li>
+<li><a class="el" href="index_8h_source.html">index.h</a></li>
 </ul>
 </div>
 <!--- window showing the filter options -->
