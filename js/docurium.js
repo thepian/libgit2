@@ -85,11 +85,13 @@ $(function() {
         for(var j in group[1]) {
           fun = group[1][j]
           link = $('<a>').attr('href', '#' + groupLink(group[0], fun)).append(fun)
-          if(sigHist[fun].changes[version]) {
-            link.addClass('changed')
-          }
-          if(version == _.first(sigHist[fun].exists)) {
-            link.addClass('introd')
+          if(sigHist[fun]) {
+            if(sigHist[fun].changes[version]) {
+              link.addClass('changed')
+            }
+            if(version == _.first(sigHist[fun].exists)) {
+              link.addClass('introd')
+            }
           }
           list.append(link)
           if(j < group[1].length - 1) {
